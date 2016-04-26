@@ -91,7 +91,7 @@ public class PersonDAL {
 	public static void deletePerson(UUID perID) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = null;
-		StudentDomainModel perGet = null;		
+		PersonDomainModel perGet = null;		
 		
 		try {
 			tx = session.beginTransaction();	
