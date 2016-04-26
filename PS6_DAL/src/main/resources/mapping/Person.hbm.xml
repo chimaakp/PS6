@@ -16,11 +16,17 @@
   <property generated="never" lazy="false" name="LastName" type="string">
    <column length="20" name="LastName" not-null="true"/>
   </property>
-  <property generated="never" lazy="false" name="DOB" type="date">
+  <property generated="never" lazy="false" name="Birthday" type="date">
    <column length="7" name="DOB" not-null="true"/>
   </property>
-  <property name="Address" type="string">
-   <column length="100" name="Address" not-null="true"/>
+  <property name="Street" type="String">
+   <column name="Street"/>
+  </property>
+  <property name="PostalCode" type="int">
+   <column name="PostalCode"/>
+  </property>
+  <property name="City" type="String">
+   <column name="City"/>
   </property>
  </class>
 </hibernate-mapping>
